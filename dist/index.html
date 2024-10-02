@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en" class="sr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="/favicon.2a2e97fc.png">
+
+    <title>Bhanu Shankar Gubba | Developer</title>
+    <meta name="keywords" content="developer, Bhanu, programming, software">
+    <meta name="description" content="Bhanu Shankar Gubba | Developer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/index.4a508c1d.css">
+    <script defer="" src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script async="" defer="" src="https://buttons.github.io/buttons.js"></script>
+
+    <style>.project-wrapper {
+  scroll-snap-type: x mandatory;
+  padding: 20px 0;
+  display: flex;
+  overflow-x: auto;
+}
+
+.project-card {
+  scroll-snap-align: start;
+  background: #fff;
+  border-radius: 10px;
+  flex: none;
+  width: 300px;
+  margin-right: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px #0000001a;
+}
+
+.project-card__image {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+}
+
+.project-card__content {
+  padding: 20px;
+}
+
+.project-card__title {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.project-card__description {
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.project-card__price {
+  color: #ff4500;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.project-card__button {
+  color: #333;
+  background-color: #e0e0e0;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 8px 16px;
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.project-card__button--source {
+  color: #fff;
+  background-color: #ff4500;
+}
+
+.project-card__button--source:hover {
+  color: #fafaf6;
+  background-color: #ff4500;
+}
+
+project-card__description {
+  margin-bottom: 15px;
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+.project-card__description li {
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+#tech-stack {
+  color: #fff;
+  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+  background-color: #02aab0;
+  background-image: linear-gradient(135deg, #02aab0, #00cdac);
+  border-top: 0;
+  height: 100%;
+  padding: 15% 0 10%;
+}
+
+.tech-stack-wrapper {
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 3rem;
+  display: flex;
+}
+
+.tech-item {
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.5rem;
+  display: flex;
+}
+
+.tech-item i {
+  margin-bottom: .5rem;
+  font-size: 3rem;
+}
+
+.tech-item span {
+  margin-top: .5rem;
+  font-size: 1rem;
+}
+
+.tech-stack h2 {
+  color: #fff;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+}
+
+.tech-cards {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  display: flex;
+}
+
+.card {
+  text-align: center;
+  background-color: #fff3;
+  border-radius: 8px;
+  width: 150px;
+  padding: 20px;
+  transform: translateZ(0);
+  box-shadow: 0 4px 8px #0000001a;
+}
+
+.card img {
+  object-fit: contain;
+  width: 50px;
+  height: 50px;
+}
+
+.card p {
+  color: #fff;
+  margin-top: 10px;
+  font-size: 1.8em;
+}
+
+#education-work {
+  color: #fff;
+  clip-path: polygon(0 0%, 100% 0, 100% 85%, 0 100%);
+  background: linear-gradient(90deg, #a855f7, #ec4899, #f97316);
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 5% 0 10%;
+}
+
+.education-work-wrapper {
+  justify-content: space-between;
+  gap: 40px;
+  display: flex;
+}
+
+.education-column, .work-experience-column {
+  flex: 1;
+}
+
+.section-title {
+  color: #fff;
+  align-items: center;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+  display: flex;
+}
+
+.section-title i {
+  margin-right: 15px;
+  font-size: 1.2em;
+}
+
+.education-item, .work-experience-item {
+  margin-bottom: 30px;
+  padding-left: 30px;
+  position: relative;
+}
+
+.education-item:before, .work-experience-item:before {
+  content: "";
+  background-color: #fff;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+
+.education-item h3, .work-experience-item h3 {
+  margin-bottom: 5px;
+  font-size: 1.4em;
+}
+
+.education-item p, .work-experience-item p {
+  color: #fffc;
+  margin: 3px 0;
+  font-size: 1em;
+}
+
+.date {
+  font-style: italic;
+}
+
+.qualification-title {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  font-size: 3em;
+}
+
+#contact {
+  color: #fff;
+  clip-path: polygon(0 10%, 100% 0, 100% 113%, 0 100%);
+  background: linear-gradient(90deg, #a855f7, #ec4899, #f97316);
+  margin-top: -5%;
+  padding: 5% 0 10%;
+}
+
+.contact-title {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  font-size: 3em;
+}
+
+.contact-subtitle {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.2em;
+}
+
+.contact-wrapper {
+  justify-content: space-between;
+  gap: 40px;
+  display: flex;
+}
+
+.contact-info, .contact-form {
+  flex: 1;
+}
+
+.contact-item {
+  margin-bottom: 30px;
+}
+
+.contact-item i {
+  margin-bottom: 10px;
+  font-size: 2em;
+}
+
+.contact-item h3 {
+  margin-bottom: 5px;
+  font-size: 2em;
+}
+
+.contact-form form {
+  flex-direction: column;
+  display: flex;
+}
+
+.contact-form input, .contact-form textarea {
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 15px;
+  font-size: 1.4em;
+}
+
+.contact-form textarea {
+  height: 150px;
+}
+
+.btn-primary {
+  color: #a855f7;
+  cursor: pointer;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1.4em;
+  transition: all .3s;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #a855f7;
+}
+
+.logo {
+  color: #df5f5f;
+  margin-right: 0%;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar {
+  z-index: 1000;
+  background-color: #fff;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0 2px 4px #f4f2f21a;
+}
+
+.navbar-container {
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+}
+
+.navbar-logo {
+  color: #df5f5f;
+  margin-right: 2rem;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar-menu {
+  gap: 1rem;
+  margin-left: auto;
+  display: flex;
+}
+
+.navbar-item {
+  color: #333;
+  border-radius: 4px;
+  padding: .5rem 1rem;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.navbar-item:hover {
+  background-color: #f0f0f0;
+}
+</style>
+  </head>
+
+  <body>
+
+    <nav class="navbar">
+        <div class="navbar-container">
+          <a href="#hero" class="navbar-logo">᥇ꫝꪖꪀꪊ ડꫝꪖꪀ𝕜ꪖ𝕣</a>
+          <div class="navbar-menu">
+            <a href="#about" class="navbar-item">About</a>
+            <a href="#projects" class="navbar-item">Projects</a>
+            <a href="#tech-stack" class="navbar-item">Tech</a>
+            <a href="#education-work" class="navbar-item">Qualification</a>
+            <a href="#contact" class="navbar-item">Contact</a>
+          </div>
+        </div>
+      </nav>
+    <div id="top"></div>
+
+    <!-- **** Hero Section **** -->
+    <section id="hero" class="jumbotron">
+      <div class="container">
+        <h1 class="hero-title load-hidden">
+          Hi, my name is <span class="text-color-main">Bhanu Shankar Gubba</span>
+          <br>
+          I'm the Developer.
+        </h1>
+        <p class="hero-cta load-hidden">
+          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about">Know more</a>
+        </p>
+      </div>
+    </section>
+    <!-- /END Hero Section -->
+
+    <!-- **** About Section **** -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title load-hidden">About me</h2>
+        <div class="row about-wrapper">
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__image load-hidden">
+              <img alt="Profile Image" class="img-fluid rounded shadow-lg" height="auto" width="300px" src="/profile.7064521f.jpeg">
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__info load-hidden">
+              <!-- <p class="about-wrapper__info-text">
+                As a student beginning a Master's in Computer Science at University College Birmingham, I'm eager to dive into the software industry and acquire hands-on expertise 🖥️🚀
+              </p> -->
+              <p class="about-wrapper__info-text">
+                I've always been a great problem solver, an independent introvert, and a technophile obsessed with the latest devices. I started learning to code when I was a student in bachelor's, though it was always more of a hobby than a career focus. After a college education in bachelor's, and continuing to pursue that hobby, I realized software engineering was the right field for me. Looking to start the career as an entry-level software engineer with a reputed firm driven by technology.
+              </p>
+              <span class="d-flex mt-3">
+                <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume" href="/assets/Bhanu%20Resume1%20.pdf">
+                  View Resume
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END About Section -->
+
+    <!-- **** Projects Section **** -->
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-title dark-blue-text">Projects</h2>
+        <div class="project-wrapper">
+          
+
+
+       
+
+
+        <!-- Project Card 3 -->
+          <div class="project-card">
+            <img src="/project.f500882b.jpg" alt="Project 1" class="project-card__image">
+            <div class="project-card__content">
+              <h3 class="project-card__title">To Do List Website with OOPS Concepts</h3>
+              <ul class="project-card__description">
+                <li>The application will support user roles and functionalities, including the ability for new users to create an account, and for existing users to log in and log out. Users will be able to add, edit, and remove tasks, and label them by priority, as well as filter and sort tasks based on date and priority.</li>
+                <li>The system functionalities include the ability to store and retrieve the user's tasks from a file, allow users to label tasks by priority (high, medium, low), and provide functionality to filter and sort tasks based on date and priority.</li>
+                <li>Implemented using object-oriented programming principles with classes and objects.</li>              
+                <li>You can visit the website here:</li>              
+              </ul>
+              <a href="https://github.com/Bhanu221999/todolist" target="_blank" rel="noopener noreferrer" class="project-card__button">Source Code</a>
+              <a href="https://todolistoops.netlify.app/" class="project-card__button project-card__button--source">Website</a>
+            </div>
+          </div>
+
+
+        <!-- Project Card 4 -->
+          <div class="project-card">
+            <img src="/project.f500882b.jpg" alt="Project 1" class="project-card__image">
+            <div class="project-card__content">
+              <h3 class="project-card__title">Council Website</h3>
+              <ul class="project-card__description">
+                <li>This project involves creating a dynamic website for a local council to provide easily accessible digital services to the community, such as housing, council tax payments, and benefits claims.</li>
+                <li>This focuses on designing the website by identifying user requirements and creating various UML diagrams to ensure accurate functionality and meet the council's needs, while the other part involves implementing the website using HTML, CSS, and JavaScript, integrating it with Firebase, and deploying it on Netlify.</li>
+                <li>The overall goal is to apply theoretical knowledge in a real-world scenario, emphasizing the importance of accessibility and digital transformation in local government services</li>
+              </ul>
+              <a href="https://github.com/Bhanu221999/councilwebsite" target="_blank" rel="noopener noreferrer" class="project-card__button">Source Code</a>
+              <a href="https://gothamcitycouncil.netlify.app/" class="project-card__button project-card__button--source">Website</a>
+            </div>
+          </div>
+
+        <!-- Project Card 5 -->
+          <div class="project-card">
+            <img src="/project.f500882b.jpg" alt="Project 1" class="project-card__image">
+            <div class="project-card__content">
+              <h3 class="project-card__title">Driving School managment System</h3>
+              <ul class="project-card__description">
+                <li>The "Emirates Driving School" project aims to automate daily tasks and transactions in driving school operations, including electronic class scheduling and comprehensive student record maintenance.</li>
+                <li>The project covers the software specifications, including the creation of interactive flowcharts and the provision of source code for various application pages.</li>
+                <li>The project includes annotated storyboards that visually summarize the system's booking procedure and user interactions, featuring clear typography, dynamic navigation, and a unified color scheme.</li>              
+                <li>Overall, this project seeks to modernize driving school operations through automation, comprehensive record-keeping, and user-centric design. </li>              
+              </ul>
+              <a href="https://github.com/Bhanu221999/drivingschool" target="_blank" rel="noopener noreferrer" class="project-card__button">Source Code</a>
+              <a href="https://drivingschoolmanagment.netlify.app/" class="project-card__button project-card__button--source">Website</a>
+            </div>
+          </div>
+
+
+        <!-- Project Card 6 -->
+          <div class="project-card">
+            <img src="/project.f500882b.jpg" alt="Project 1" class="project-card__image">
+            <div class="project-card__content">
+              <h3 class="project-card__title">Design and implement Data Warehouse</h3>
+              <ul class="project-card__description">
+                <li>Designed an ERD for the SMP Retail data warehouse to model key entities and relationships. Analyzed benefits like improved customer insights and product sales analysis. Addressed challenges in data integration and quality from multiple sources.</li>
+                <li>Built the data warehouse on Snowflake, creating fact and dimension tables for analyzing store performance, sales, and customer behavior. Optimized design for efficient analysis and reporting.</li>
+                <li>Used BI tools to clean and transform Snowflake data, resolving quality issues. Developed dashboards for easy data interpretation and identified ethical concerns in data privacy and bias, proposing mitigation strategies.</li>              
+              </ul>
+              <!-- <a href="https://github.com/yourusername/project-repo" target="_blank" rel="noopener noreferrer" class="project-card__button">Source Code</a> -->
+              <a href="/assets/datawarehouseproject.pdf" class="project-card__button project-card__button--source">Project</a>
+            </div>
+          </div>
+
+        <!-- Project Card 7 -->
+        <div class="project-card">
+            <img src="/project.f500882b.jpg" alt="Project 1" class="project-card__image">
+            <div class="project-card__content">
+              <h3 class="project-card__title">AI and Machine Learning in Action: Problem-Solving, Implementation and Evaluation</h3>
+              <ul class="project-card__description">
+                <li>Facial recognition systems are being implemented in high-security buildings like government facilities to enhance access control and reduce security threats by using advanced computer vision and machine learning algorithms for accurate identification.</li>
+                <li>The system's development encompasses data collection via cameras, database processing, model training, and thorough testing to ensure reliable authorization of individuals.</li>
+                <li>The implementation also addresses ethical concerns regarding privacy, incorporating governance structures and rules to balance security needs with individual rights protection.</li>
+              </ul>
+              <!-- <a href="https://github.com/yourusername/project-repo" target="_blank" rel="noopener noreferrer" class="project-card__button">Source Code</a> -->
+              <a href="/assets/AI%20assignment%20final%20d.pdf" class="project-card__button project-card__button--source">Project</a>
+            </div>
+          </div>  
+
+
+        <!-- Project Card 8 -->
+        <div class="project-card">
+            <img src="/project.f500882b.jpg" alt="Project 1" class="project-card__image">
+            <div class="project-card__content">
+              <h3 class="project-card__title">Gesture Based Input System</h3>
+              <ul class="project-card__description">
+                <li>Developed a 'Gesture-Based Input System' using deep learning and machine learning techniques, including CNN algorithms and libraries like TensorFlow, Keras, and OpenCV.</li>
+                <li>Gesture-Based Input System is a natural form of device-free communication that can provide several advantages in Human-Computer Interaction, reducing the need for external hardware interaction and making the system more reliable and easy to use.</li>
+                <li>This paper proposes a low-complexity gesture recognition scheme as an interface between humans and machines, using a set of hand gestures to enable easier control of real-time systems. </li>
+              </ul>
+              <!-- <a href="https://github.com/yourusername/project-repo" target="_blank" rel="noopener noreferrer" class="project-card__button">Source Code</a> -->
+              <a href="/assets/Major%20report%20FINAL%20(1)%20(1).pdf" class="project-card__button project-card__button--source">Project</a>
+            </div>
+          </div>  
+
+         <!-- Project Card 9 -->
+         <div class="project-card">
+            <img src="/project.f500882b.jpg" alt="Project 1" class="project-card__image">
+            <div class="project-card__content">
+              <h3 class="project-card__title">Face mask detection using Deep Learning</h3>
+              <ul class="project-card__description">
+                <li>Developed a real-time face mask detection system to prevent the spread of COVID-19. Leveraged a basic Convolutional Neural Network (CNN) model using TensorFlow, Keras, Scikit-learn, and OpenCV.</li>
+                <li>The system processes webcam input, identifies faces, and classifies them as wearing or not wearing masks.</li>
+                <li>The proposed work contains three stages: pre-processing, Training a CNN, and Real-time classification. The pre-processing stage involves Grayscale Conversion of RGB image, image resizing and normalization, and the proposed CNN classifies faces with and without masks using Categorical cross-entropy as the loss function, achieving a Validation accuracy of 96%.</li>
+              </ul>
+              <!-- <a href="https://github.com/yourusername/project-repo" target="_blank" rel="noopener noreferrer" class="project-card__button">Source Code</a> -->
+              <a href="/assets/face%20mask%20mini%20project%20synopsis.pdf" class="project-card__button project-card__button--source">Project</a>
+            </div>
+          </div>  
+
+        <!-- Project Card 10 -->
+        <div class="project-card">
+            <img src="/project.f500882b.jpg" alt="Project 1" class="project-card__image">
+            <div class="project-card__content">
+              <h3 class="project-card__title">Network Protocols, IP addressing and Virtualisation</h3>
+              <ul class="project-card__description">
+                <li>Tasked with creating and subnetting a network for the UCB Camdon House building labs, which consists of four labs with varying numbers of PCs (20, 24, 12, and 14)</li>
+                <li>Each lab requires a switch to connect its PCs, a router to connect to the broader network, and a virtualized PC running at least two operating systems for lab sessions.</li>
+                <li>Designed an efficient network topology that accommodates these requirements while ensuring proper subnetting for each lab.</li>
+              </ul>
+              <!-- <a href="https://github.com/yourusername/project-repo" target="_blank" rel="noopener noreferrer" class="project-card__button">Source Code</a> -->
+              <a href="/assets/computer%20networks%20documenttion%20d.pdf" class="project-card__button project-card__button--source">Project</a>
+            </div>
+          </div>  
+  
+
+            
+          <!-- Add more project cards as needed -->
+
+        </div>
+      </div>
+    </section>
+    <!-- /END Projects Section -->
+
+    <!-- **** Contact Section **** -->
+    <!-- **** Tech Stack Section **** -->
+<!-- **** Tech Stack Section **** -->
+<section id="tech-stack">
+    <div class="tech-stack">
+        <h2>TECH STACK</h2>
+        <div class="tech-cards">
+            <div class="card">
+                <img src="https://img.icons8.com/color/48/000000/python.png" alt="Python">
+                <p>Python</p>
+            </div>
+            <div class="card">
+                <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript">
+                <p>JavaScript</p>
+            </div>
+            <div class="card">
+                <img src="https://img.icons8.com/color/48/000000/c-programming.png" alt="C Language">
+                <p>C Language</p>
+            </div>
+            <div class="card">
+                <img src="https://img.icons8.com/color/48/000000/react-native.png" alt="React Native">
+                <p>React Native</p>
+            </div>
+            <div class="card">
+                <img src="https://img.icons8.com/color/48/000000/typescript.png" alt="TypeScript">
+                <p>TypeScript</p>
+            </div>
+            <div class="card">
+                <img src="https://img.icons8.com/color/48/000000/express.png" alt="Express">
+                <p>Express</p>
+            </div>
+            <div class="card">
+                <img src="https://img.icons8.com/color/48/000000/nodejs.png" alt="NodeJS">
+                <p>NodeJS</p>
+            </div>
+            <div class="card">
+                <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML">
+                <p>HTML</p>
+            </div>
+            <div class="card">
+                <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS">
+                <p>CSS</p>
+            </div>
+            <div class="card">
+                <img src="https://img.icons8.com/color/48/000000/mysql-logo.png" alt="MySQL">
+                <p>MySQL</p>
+            </div>
+            <div class="card">
+                <img src="https://img.icons8.com/color/48/000000/mongodb.png" alt="MongoDB">
+                <p>MongoDB</p>
+            </div>
+            <div class="card">
+                <img src="https://img.icons8.com/color/48/000000/git.png" alt="Git">
+                <p>Git</p>
+            </div>
+            <div class="card">
+                <img src="https://img.icons8.com/color/48/000000/firebase.png" alt="Firebase">
+                <p>Firebase</p>
+            </div>
+        </div>
+    </div>
+    
+  </section>
+  <!-- /END Tech Stack Section -->
+  <!-- /END Tech Stack Section -->
+    <!-- /END Contact Section -->
+
+        <!-- New Education and Work Experience Section -->
+        <section id="education-work">
+            <div class="container">
+            <h2 class="qualification-title">Qualification</h2>
+              <div class="education-work-wrapper">
+                <div class="education-column">
+                  <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Education</h2>
+                  <div class="education-item">
+                    <h2>University College Birmingham</h2>
+                    <h2>Master's</h2>
+                    <h4 class="date">2023 - 2025</h4>
+                  </div>
+                  <div class="education-item">
+                    <h2>Bharat Institute of Engineering and Technology</h2>
+                    <h2>Bachelor's</h2>
+                    <h4 class="date">2018 - 2022</h4>
+                  </div>
+                  <div class="education-item">
+                    <h2>Shraddha Junior College</h2>
+                    <h2>Intermediate (MPC)</h2>
+                    <h4 class="date">2016 - 2018</h4>
+                  </div>
+                </div>
+                <div class="work-experience-column">
+                  <h2 class="section-title"><i class="fas fa-briefcase"></i> Work Experience</h2>
+                  <div class="work-experience-item">
+                    <h2>Accenture</h2>
+                    <h2>Software Developer</h2>
+                    <h4 class="date">2022 - 2023</h4>
+                  </div>
+                  <div class="work-experience-item">
+                    <h2>Infosys Springboard</h2>
+                    <h2>Student</h2>
+                    <h4 class="date">2023</h4>
+                  </div>
+                  <div class="work-experience-item">
+                    <h2>Udemy</h2>
+                    <h2>Student</h2>
+                    <h4 class="date">2023</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+      
+          <section id="contact">
+            <div class="container">
+              <h2 class="contact-title">Contact Me</h2>
+              <p class="contact-subtitle">Get in Touch</p>
+              <div class="contact-wrapper">
+                <div class="contact-info">
+                  <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>Call Me</h3>
+                    <p>+44 7424083068</p>
+                  </div>
+                  <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>gbhanushankar1999@gmail.com</p>
+                  </div>
+                  <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Location</h3>
+                    <p>Birmingham, United Kingdom</p>
+                  </div>
+                </div>
+                <div class="contact-form">
+                    <form action="https://formspree.io/f/xgvwnqqk" method="POST">
+                      <input type="text" name="name" placeholder="Full Name" required="">
+                      <input type="email" name="email" placeholder="Email" required="">
+                      <input type="text" name="subject" placeholder="Subject" required="">
+                      <textarea name="message" placeholder="Message" required=""></textarea>
+                      <button type="submit" class="btn btn-primary">Send Message <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                  </div>
+              </div>
+            </div>
+          </section>
+    <!-- **** Footer Section **** -->
+    <footer class="footer navbar-static-bottom">
+      <div class="container">
+        <a rel="noreferrer" href="#top" class="back-to-top">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+        <div class="social-links">
+          <a rel="noreferrer" href="https://twitter.com/gubba3843" target="_blank">
+            <i class="fa fa-twitter fa-inverse"></i>
+          </a>
+          <a rel="noreferrer" href="https://www.linkedin.com/in/bhanushankargubba/" target="_blank">
+            <i class="fa fa-linkedin fa-inverse"></i>
+          </a>
+          <a rel="noreferrer" href="https://github.com/Bhanu221999" target="_blank">
+            <i class="fa fa-github fa-inverse"></i>
+          </a>
+        </div>
+
+        <hr>
+      </div>
+    </footer>
+    <!-- /END Footer Section -->
+    <script>const form = document.querySelector("form");
+form.addEventListener("submit", (e)=>{
+    e.preventDefault();
+    fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        headers: {
+            "Accept": "application/json"
+        }
+    }).then((response)=>{
+        if (response.ok) {
+            alert("Message sent successfully!");
+            form.reset();
+        } else alert("There was an error. Please try again.");
+    }).catch((error)=>{
+        alert("There was an error. Please try again.");
+    });
+});
+
+</script>
+    <script defer="" src="/index.975ef6c8.js"></script>
+    <script>document.querySelectorAll('a[href^="#"]').forEach((anchor)=>{
+    anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth"
+        });
+    });
+});
+document.querySelectorAll('a[href^="#"]').forEach((anchor)=>{
+    anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth"
+        });
+    });
+});
+
+</script>
+  </body>
+</html>
